@@ -20,7 +20,7 @@ function App() {
   const [guess, setGuess] = useState([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [time, setTime] = useState(11);
+  const [time, setTime] = useState(60);
   const [intrvl, setIntrvl] = useState(undefined);
   const [gameOver, setGameOver] = useState(false);
 
@@ -39,7 +39,7 @@ function App() {
       setGuess([...guess, card]);
       shuffleCards(cards);
     }
-    if (guess.length == 0) {
+    if (guess.length === 0) {
       setIntrvl(tick());
     }
   }
@@ -66,13 +66,6 @@ function App() {
     cards.sort(() => Math.random() - 0.5)
   }
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => setTime((time) => time - 1), 1000);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
-
   function tick() {
     const interval = setInterval(() => {
       setTime(time => (time - 1));
@@ -81,11 +74,11 @@ function App() {
   }
 
   useEffect(() => {
-    if (time == 0) {
+    if (time === 0) {
       clearInterval(intrvl)
       setGameOver(true);
     }
-  })
+  }, [time, intrvl])
 
 
   return (
