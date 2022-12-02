@@ -18,7 +18,7 @@
 .header {
     display: flex;
     /* border: 1px solid black; */
-    margin: 0 0 2rem 0 ;
+    margin: 0 0 2rem 0;
     justify-content: center;
 }
 
@@ -48,7 +48,7 @@ button {
     transition: color 0.5s, background-color 0.5s;
 }
 
-button:hover{ 
+button:hover {
     color: white;
     background-color: black;
 }
@@ -67,4 +67,13 @@ button:hover{
     background-repeat: no-repeat;
     background-size: contain;
     margin: 1rem;
+}
+
+.logo {
+    height: 35vh;
+    width: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

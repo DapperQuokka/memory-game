@@ -1,7 +1,7 @@
 .card-container {
     width: fit-content;
     height: fit-content;
-    margin: 3vh;
+    margin: 1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,8 +12,6 @@
 }
 
 .card-content {
-    height: 20vh;
-    width: 20vh;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 1vh;
@@ -22,16 +20,17 @@
 
 h3 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
     background-color: rgba(255, 255, 255, 0.70);
     padding: 1vh;
-    margin: 1em;
+    margin: 1vh;
 }
 
+/*
 .card-container:hover .card-content {
     height: 25vh;
     width: 25vh;
 }
+*/
 
 .card-container:hover {
     box-shadow: 0 0 30px rgb(255, 255, 255);
