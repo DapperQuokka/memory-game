@@ -1,0 +1,38 @@
+.card-container {
+    width: fit-content;
+    height: fit-content;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.7s;
+}
+
+.card-content {
+    height: 20vh;
+    width: 20vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1vh;
+    transition: height 0.7s, width 0.7s;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 1vh;
+    margin: 1em;
+}
+
+.card-container:hover .card-content {
+    height: 25vh;
+    width: 25vh;
+}
+
+.card-container:hover {
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
